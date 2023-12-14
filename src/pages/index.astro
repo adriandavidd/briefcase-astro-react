@@ -1,40 +1,43 @@
 ---
+import About from "../components/About.tsx";
+import { Project, ProjectText } from "../components/Projects.tsx";
 import Nav from "../components/Nav.tsx";
 import Text from "../components/Text.tsx";
 import Img from "../components/Img.tsx";
-import About from "../components/About.tsx";
-import Projects from "../components/Projects";
 ---
 
-<html class="bg-zinc-950 border-8 border-zinc-900">
+<div class="bg-zinc-950">
   <head>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
-
-  <header class="bg-zinc-950">
+  <div class="bg-zinc-950 border-8 border-zinc-900">
     <section>
-      <Nav />
+      <Nav client:load />
     </section>
     <section class="flex items-center justify-center mt-44 mb-20 bg-zinc-950">
       <Text client:load />
     </section>
-  </header>
-  <main>
+    <header class="bg-zinc-950"></header>
+
     <div
       class="flex items-center justify-center bg-zinc-950 py-5 my-7 border-y border-zinc-950"
     >
       <Img client:load />
     </div>
-    <div>
-      <About />
+
+    <div class="overflow-hidden">
+      <About client:load />
     </div>
     <div>
       <div class="flex flex-col justify-center items-center pb-10">
-        <span class="text-white font-bold text-4xl">Projects</span>
+        <ProjectText client:load />
       </div>
-      <Projects />
+      <div>
+        <Project client:load />
+      </div>
     </div>
-  </main>
-
-
-</html>
+    <div class="h-80"></div>
+    <div class="h-80"></div>
+    <div class="h-80"></div>
+  </div>
+</div>

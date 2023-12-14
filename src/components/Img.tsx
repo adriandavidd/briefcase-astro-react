@@ -14,8 +14,8 @@ const Img = () => {
     <Carousel
       className="flex items-center justify-center w-full h-full"
       autoPlay
-      interval={900}
       infiniteLoop
+      interval={700}
       dynamicHeight
       showThumbs={false}
       showStatus={false}
