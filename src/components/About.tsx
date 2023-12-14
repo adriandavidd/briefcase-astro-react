@@ -1,8 +1,8 @@
 function About() {
   return (
     <div className="bg-zinc-950 border-2 rounded-lg border-zinc-900 flex flex-col justify-center items-center my-20 mx-60">
-      <div className="p-10">
-        <p className=" text-4xl font-bold text-zinc-400 mt-10 mb-5">About me</p>
+      <div className="p-12">
+        <p className="text-4xl font-bold text-zinc-400 mt-5 mb-5">About me</p>
         <p className="text-2xl font-medium text-white">
           I am a passionate self-taught developer with an insatiable thirst for
           knowledge in this wide world, My journey began with a "Hello word" in

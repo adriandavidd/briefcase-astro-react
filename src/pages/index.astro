@@ -3,16 +3,23 @@ import Nav from "../components/Nav.tsx";
 import Text from "../components/Text.tsx";
 import Img from "../components/Img.tsx";
 import About from "../components/About.tsx";
+import Projects from "../components/Projects";
 ---
 
-<div class="bg-zinc-950 border-2 border-zinc-900">
-  <header>
-    <Nav />
+<html class="bg-zinc-950 border-8 border-zinc-900">
+  <head>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+
+  <header class="bg-zinc-950">
+    <section>
+      <Nav />
+    </section>
+    <section class="flex items-center justify-center mt-44 mb-20 bg-zinc-950">
+      <Text client:load />
+    </section>
   </header>
   <main>
-    <div class="flex items-center justify-center mt-44 mb-20 bg-zinc-950">
-      <Text client:load />
-    </div>
     <div
       class="flex items-center justify-center bg-zinc-950 py-5 my-7 border-y border-zinc-950"
     >
@@ -21,5 +28,13 @@ import About from "../components/About.tsx";
     <div>
       <About />
     </div>
+    <div>
+      <div class="flex flex-col justify-center items-center pb-10">
+        <span class="text-white font-bold text-4xl">Projects</span>
+      </div>
+      <Projects />
+    </div>
   </main>
-</div>
+
+
+</html>
